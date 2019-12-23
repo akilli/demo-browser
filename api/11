@@ -1,7 +1,7 @@
 <section class="block-content">
     <h2>Tschechische Chemiker</h2>
     <figure class="audio">
-        <audio src="/demo-browser/sample.weba" controls="controls"></audio>
+        <audio src="/demo-browser/file/sample.weba" controls="controls"></audio>
         <figcaption>Sample WEBA</figcaption>
     </figure>
     <div class="content">

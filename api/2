@@ -1,7 +1,7 @@
 <section class="block-info">
     <h2>Fischers Fritz</h2>
     <figure class="image">
-        <img src="/demo-browser/sample.png" alt="Sample PNG" />
+        <img src="/demo-browser/file/sample.png" alt="Sample PNG" />
         <figcaption>Sample PNG</figcaption>
     </figure>
     <div class="content">

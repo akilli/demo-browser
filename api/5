@@ -1,7 +1,7 @@
 <section class="block-info">
     <h2>Fichtendickicht</h2>
     <figure class="image">
-        <img src="/demo-browser/sample.webp" alt="Sample WEBP" />
+        <img src="/demo-browser/file/sample.webp" alt="Sample WEBP" />
         <figcaption>Sample WEBP</figcaption>
     </figure>
     <div class="content">

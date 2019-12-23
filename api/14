@@ -1,7 +1,7 @@
 <section class="block-info">
     <h2>Die Katze</h2>
     <figure class="video">
-        <video src="/demo-browser/sample.webm" controls="controls"></video>
+        <video src="/demo-browser/file/sample.webm" controls="controls"></video>
         <figcaption>Sample WEBM</figcaption>
     </figure>
     <div class="content">

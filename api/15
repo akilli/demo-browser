@@ -1,7 +1,7 @@
 <section class="block-content">
     <h2>Kerkermeister Kerkeling</h2>
     <figure class="iframe">
-        <iframe src="/demo-browser/sample.html" width="560" height="315"></iframe>
+        <iframe src="/demo-browser/file/sample.html" width="560" height="315"></iframe>
         <figcaption>Sample HTML</figcaption>
     </figure>
     <div class="content">
