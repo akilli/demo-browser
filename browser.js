@@ -45,7 +45,7 @@
            figure.addEventListener('click', () => window.opener.postMessage(msg, origin));
 
            if (window.location.hash && window.location.hash !== `#${type}`) {
-               figure.hidden = true;
+               figure.parentElement.removeChild(figure);
            }
         });
     });
