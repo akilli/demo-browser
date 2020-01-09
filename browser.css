@@ -3,6 +3,7 @@ body {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    min-height: 0;
     padding: 1.5rem;
 }
 
