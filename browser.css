@@ -2,6 +2,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5rem;
+    align-items: end;
     min-height: 0;
     padding: 1.5rem;
 }
@@ -12,17 +13,19 @@ body > * {
 }
 
 body > :hover {
-    box-shadow: 0.25rem 0.25rem 0.25rem darkorange;
+    box-shadow: 0.25rem 0.25rem 0.25rem black;
 }
 
-body > :hover audio,
-body > :hover iframe,
-body > :hover video {
-    pointer-events: none;
+section {
+    align-self: start;
+    padding: 0.75rem;
+}
+
+section > :not(:last-child) {
+    margin-bottom: 0.75rem;
 }
 
 h2 {
-    padding: 0.75rem;
     font-size: 1.25rem;
 }
 
@@ -40,8 +43,5 @@ video {
     width: 100%;
     max-height: 14rem;
     object-fit: cover;
-}
-
-div.content {
-    padding: 0.75rem;
+    pointer-events: none;
 }
