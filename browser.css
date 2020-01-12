@@ -1,24 +1,14 @@
 body {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
     min-height: 0;
     padding: 1.5rem;
 }
 
-body > section {
-    align-self: flex-start;
-}
-
 body > * {
-    width: calc(25% - 1.125rem);
-    margin: 0 0 1.5rem 1.5rem;
     box-shadow: 0.25rem 0.25rem 0.25rem darkgrey;
     cursor: pointer;
-}
-
-body > :nth-child(4n+1) {
-    margin-left: 0;
 }
 
 body > :hover {
