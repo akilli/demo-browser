@@ -61,10 +61,6 @@ kbd {
 /**
  * Figure
  */
-figcaption {
-    font-size: 0.875rem;
-}
-
 figure {
     text-align: center;
 }
@@ -81,10 +77,17 @@ figure.right {
     text-align: left;
 }
 
-figure > audio,
-figure > iframe,
-figure > img,
-figure > video {
+figcaption {
+    font-size: 0.875rem;
+}
+
+/**
+ * Media
+ */
+audio,
+iframe,
+img,
+video {
     margin: 0 auto;
 }
 
