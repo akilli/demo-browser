@@ -11,7 +11,10 @@
         document.querySelectorAll('body > section[data-block]').forEach(item => item.addEventListener('click', () => {
             const id = item.getAttribute('data-block');
             item.removeAttribute('data-block');
-            window.opener.postMessage({id: id, content: item.outerHTML}, "*");
+            window.opener.postMessage({
+                id: id,
+                content: item.outerHTML
+            }, "*");
         }));
 
         // Media
@@ -20,13 +23,12 @@
             const caption = figure.querySelector(':scope > figcaption');
             const tag = media.tagName.toLowerCase();
             const type = tag === 'img' ? 'image' : tag;
-            const msg = {
-                alt: media.getAttribute('alt'),
-                caption: caption ? caption.innerHTML : null,
-                src: media.src,
-                type: type
-            };
-           figure.addEventListener('click', () => window.opener.postMessage(msg, "*"));
+           figure.addEventListener('click', () => window.opener.postMessage({
+               alt: media.getAttribute('alt'),
+               caption: caption ? caption.innerHTML : null,
+               src: media.src,
+               type: type
+           }, "*"));
 
            if (window.location.hash && window.location.hash !== `#${type}`) {
                figure.parentElement.removeChild(figure);
