@@ -10,7 +10,6 @@
     try {
         origin = window.opener.origin || window.opener.location.origin;
     } catch (e) {
-        document.body.innerHTML = 'Access denied';
         setTimeout(window.close, 3000);
         return;
     }
