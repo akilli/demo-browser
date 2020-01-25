@@ -1,7 +1,7 @@
 <section class="block-content">
     <h2>Der kleine plappernde Kaplan</h2>
     <figure class="audio">
-        <audio src="/demo-browser/file/sample.oga" controls="controls"></audio>
+        <audio src="https://akilli.github.io/demo-browser/file/sample.oga" controls="controls"></audio>
         <figcaption>Sample OGA</figcaption>
     </figure>
     <div class="content">

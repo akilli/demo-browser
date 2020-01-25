@@ -1,7 +1,7 @@
 <section class="block-info">
     <h2>Blaukraut</h2>
     <figure class="image">
-        <img src="/demo-browser/file/sample.jpg" alt="Sample JPG" />
+        <img src="https://akilli.github.io/demo-browser/file/sample.jpg" alt="Sample JPG" />
         <figcaption>Sample JPG</figcaption>
     </figure>
     <div class="content">

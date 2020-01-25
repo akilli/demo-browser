@@ -1,7 +1,7 @@
 <section class="block-info">
     <h2>Whiskeymixer</h2>
     <figure class="image">
-        <img src="/demo-browser/file/sample.svg" alt="Sample SVG" />
+        <img src="https://akilli.github.io/demo-browser/file/sample.svg" alt="Sample SVG" />
         <figcaption>Sample SVG</figcaption>
     </figure>
     <div class="content">
