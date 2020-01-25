@@ -2,24 +2,8 @@
 
 (function (document, window) {
     if (!window.opener) {
+        console.error('window.opener undefined');
         return;
-    }
-
-    let origin;
-
-    try {
-        origin = window.opener.origin || window.opener.location.origin;
-    } catch (e) {
-        console.error('Access denied');
-        setTimeout(window.close, 3000);
-        return;
-    }
-
-    function getUrl(url) {
-        const a = document.createElement('a');
-        a.href = url;
-
-        return a.origin === origin ? a.pathname : a.href;
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -27,7 +11,7 @@
         document.querySelectorAll('body > section[data-block]').forEach(item => item.addEventListener('click', () => {
             const id = item.getAttribute('data-block');
             item.removeAttribute('data-block');
-            window.opener.postMessage({id: id, content: item.outerHTML}, origin);
+            window.opener.postMessage({id: id, content: item.outerHTML}, "*");
         }));
 
         // Media
@@ -39,10 +23,10 @@
             const msg = {
                 alt: media.getAttribute('alt'),
                 caption: caption ? caption.innerHTML : null,
-                src: getUrl(media.src),
+                src: media.src,
                 type: type
             };
-           figure.addEventListener('click', () => window.opener.postMessage(msg, origin));
+           figure.addEventListener('click', () => window.opener.postMessage(msg, "*"));
 
            if (window.location.hash && window.location.hash !== `#${type}`) {
                figure.parentElement.removeChild(figure);
