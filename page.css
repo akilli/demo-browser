@@ -129,12 +129,6 @@ table {
     font-size: 0.875rem;
 }
 
-tbody,
-tfoot,
-thead {
-    width: 100%;
-}
-
 td,
 th {
     min-height: 1.5rem;
