@@ -7,7 +7,7 @@
     }
 
     window.addEventListener('message', ev => {
-        if (ev.origin === window.opener.origin && ev.source === window.opener) {
+        if (ev.source === window.opener) {
             console.log(ev);
         }
     }, false);
