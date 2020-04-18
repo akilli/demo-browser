@@ -6,12 +6,6 @@
         return;
     }
 
-    window.addEventListener('message', ev => {
-        if (ev.source === window.opener) {
-            console.log(ev);
-        }
-    }, false);
-
     document.addEventListener('DOMContentLoaded', () => {
         // Block
         document.querySelectorAll('body > section[data-block]').forEach(item => item.addEventListener('click', () => {
