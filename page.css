@@ -94,7 +94,6 @@ video {
 /**
  * Blockquote
  */
-figure.blockquote,
 figure.quote {
     padding: 2.25rem 0.75rem 0.75rem;
     color: #fff;
@@ -102,12 +101,10 @@ figure.quote {
     box-shadow: 0.125rem 0.125rem 0.125rem #e0e0e0;
 }
 
-figure.blockquote > blockquote,
 figure.quote > blockquote {
     margin-bottom: 0.75rem;
 }
 
-figure.blockquote > blockquote::before,
 figure.quote > blockquote::before {
     display: block;
     content: '🙷';
@@ -115,7 +112,6 @@ figure.quote > blockquote::before {
     font-size: 6rem;
 }
 
-figure.blockquote > figcaption,
 figure.quote > figcaption {
     padding-top: 0.75rem;
     border-top: 0.0625rem solid;
@@ -127,6 +123,11 @@ figure.quote > figcaption {
 table {
     width: 100%;
     font-size: 0.875rem;
+}
+
+figure.table > table {
+    width: auto;
+    margin: 0 auto;
 }
 
 td,
