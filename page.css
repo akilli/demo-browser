@@ -149,8 +149,15 @@ tbody tr:last-child th {
 }
 
 /**
- * Save
+ * Editor
  */
+#rte {
+    width: 100%;
+    min-height: 15rem;
+    max-height: 45rem;
+    overflow-y: scroll;
+}
+
 button#save {
     display: block;
     line-height: 1.5rem;
